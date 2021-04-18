@@ -1,0 +1,296 @@
+*{
+	box-sizing: border-box;
+}
+
+
+
+/*----------------navigaiton section-------------------*/
+
+body{
+	margin: 0;
+} 
+
+ nav{
+	background-color: white;
+}
+
+.logo{
+	margin: 20px;
+}
+
+.menu{
+	float: right;
+	margin: 20px;
+}
+
+.menu ul{
+	list-style: none;
+	padding-left: 0px;
+	margin: 0px;
+}
+
+.menu ul li{
+	display: inline-block;
+	margin-right: 20px;
+
+}
+
+.logo, .menu{
+	display: inline-block;
+}
+
+.menu ul li a{
+	text-decoration: none; 
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.menu ul li a:hover{
+	background-color: grey;
+	color: white;
+	transition: all 0.5s ease;
+}
+
+/*----------------------header section----------------*/
+
+header {
+	background-image: url('images/top.JPG');
+	height: 500px;
+	background-size: cover; 
+	background-repeat: no-repeat;
+	background-attachment: fixed; 
+	background-position: -10px;
+}
+
+header p{
+	margin: 0;
+}
+
+.intro{
+	text-align: center;
+	padding-top: 100px; 
+}
+
+.btn-work{
+	background-color: yellow;
+	display: inline-block;
+	padding: 10px 25px;
+	color: grey;
+	margin: 15px 10px;
+	font-weight: bold;
+	border-radius: 20px;
+	text-decoration: none;
+}
+
+.btn-work:hover, .btn-contact:hover{
+	background-color: white;
+	color: black;
+	transition: all 0.5s ease;
+}
+
+.btn-contact{
+	background-color: grey;
+	display: inline-block;
+	padding: 10px 25px;
+	color: yellow;
+	margin: 15px 10px;
+	font-weight: bold;
+	border-radius: 20px;
+	text-decoration: none;
+}
+
+/*-------------------------------ABOUT ME-------------------------*/
+
+.about-me{
+	width: 100%; 
+	padding-top: 50px;
+}
+
+.about-me:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.about-me h2{
+	text-align: center;
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.about-me h2:after{
+	content: '';
+	position: absolute;
+	width: 88px;
+	height: 2px;
+	margin-left: -48px;
+	left: 50%;
+	bottom: -5px;
+	background-color: grey;	
+}
+
+.about-me .col-left, .about-me .col-right{
+	width: 50%;
+	float: left; 
+}
+
+.about-me .col-left{
+	padding-left: 3%;
+	padding-right: 3%;
+	
+}
+
+.about-me a{
+	background-color: grey;
+	color: yellow;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 20px;
+	display: inline-block;
+	font-weight: bold;
+	border: 1px solid yellow;
+}
+
+.about-me .col-left img{
+	max-width: 100%;
+	
+}
+
+.about-me a:hover{
+	background-color: yellow;
+	color: grey;
+	transition: all 0.5s ease
+}
+
+/*-------------------------my skills-----------------------*/
+
+.my-skills{
+	background-color: #80808069;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+.my-skills h2{
+	position: relative;
+}
+
+.my-skills h2:after{
+	content: '';
+	position: absolute;
+	width: 88px;
+	height: 2px;
+	margin-left: -48px;
+	left: 50%;
+	bottom: -8px;
+	background-color: black;	
+}
+
+.my-skills:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.my-skills .left, .my-skills .center, .my-skills .right{
+	width: 33.3333333333333%;
+	display: inline-block;
+	float: left;
+}
+
+/*--------------------------my projects----------------------*/
+
+.my-projects{
+	background-color: white;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+
+}
+
+.my-projects:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.my-projects h2{
+	text-transform: uppercase;
+	margin-top: 0;
+	position: relative;
+}
+
+.my-projects h2:after{
+	content: '';
+	position: absolute;
+	width: 88px;
+	height: 2px;
+	margin-left: -48px;
+	left: 50%;
+	bottom: -5px;
+	background-color: black;
+}
+
+.my-projects .project1, .my-projects .project2, .my-projects .project3{
+	height: 300px;
+	width: 30%;
+	float: left;
+	background-color: lightblue;
+	position: relative;
+	overflow: hidden;
+}
+
+.my-projects .project1{
+	margin-left: 2%;
+	margin-right: 1.5%;
+	background-image: url(images/wires.jpg); 
+}
+
+.my-projects .project2{
+	margin-left: 1%;
+	margin-right: 1%;
+	background-image: url(images/design.jpg);
+
+}
+
+.my-projects .project3{
+	margin-left: 1.5%;
+	margin-right: 2%;
+	background-image: url(images/security.jpg);
+}
+
+.my-projects .overlay{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	padding: 310px;
+	align-content: center;
+
+}
+
+.my-projects .overlay:hover{
+	padding-top: 130px;
+	transition: all 0.5s ease;
+	background-color: rgba(0,0,0,0.6);
+}
+
+.overlay a{
+	display: inline-block;
+	font-size: 13px;
+	padding: 10px 20px;
+	text-decoration: none;
+	border: 1px solid #fff;
+	color: #fff;
+	font-weight: bold;
+
+}
+
+/*-------------------------CONTACT SECTION-------------------*/
+
+.social-container{
+	width: 
+}
+
+
